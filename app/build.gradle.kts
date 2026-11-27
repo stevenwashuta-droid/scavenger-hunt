@@ -11,8 +11,8 @@ android {
         applicationId = "com.cluetrail.app"
         minSdk = 26
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "1.1"
     }
 
     // A fixed signing key kept in the repo so every build can install over the previous one.

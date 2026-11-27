@@ -50,7 +50,8 @@ object Api {
                 }
                 conn.disconnect()
             } catch (e: Exception) {
-                err = "Couldn't reach the server. Check your internet connection and try again."
+                err = "Couldn't reach the server. Check your internet connection and try again.\n\n" +
+                    "(Details: ${e.javaClass.simpleName}: ${e.message ?: "no message"})"
             }
             val finalOut = out
             val finalErr = err
